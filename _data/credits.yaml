@@ -23,10 +23,6 @@
       url: https://www.codefor.nl
       logo: /assets/img/credits/codefornl.png
 
-- role: Fotografie
-  credits:
-    - name: Erik Jansen Fotografie
-
 - role: Oorspronkelijke standaard
   credits:
     - name: Foundation for Public Code
