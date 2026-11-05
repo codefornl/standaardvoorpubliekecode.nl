@@ -28,5 +28,6 @@
     - name: Foundation for Public Code
       url: https://publiccode.net
       logo: /assets/img/credits/foundation-for-public-code.png
-    - name: Standard for Public Code-community
+    - name: Standard for Public Code community
       url: https://www.standardforpubliccode.org
+      logo: /assets/img/credits/standard-for-public-code.png
