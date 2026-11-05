@@ -1,0 +1,18 @@
+title: Standaard voor Publieke Code
+description: Startpagina voor de Nederlandse community rond de Standaard voor Publieke Code.
+lang: nl
+
+# @import blijft nodig: GitHub Pages bouwt met een oude Sass-versie die geen @use kent
+sass:
+  sourcemap: never
+  silence_deprecations: [import]
+
+# Standaard-achtergrondfoto voor de banner; per pagina te overschrijven met hero_image in de front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      hero_image: /assets/img/hero/launch-standaard-voor-publieke-code.jpg
+
+exclude:
+  - README.md

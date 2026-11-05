@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#42145f">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/165153351?s=200&v=4">
+  <link rel="stylesheet" href="/assets/css/design-system.css">
+</head>
+<body class="ds">
+
+  {% if page.hero_title %}
+  <section class="hero{% if page.hero_image %} hero--with-image{% endif %}"{% if page.hero_image %} style="--hero-image: url('{{ page.hero_image }}')"{% endif %}>
+    <div class="container">
+      <h1>{{ page.hero_title }}</h1>
+      {% if page.hero_text %}{{ page.hero_text | markdownify }}{% endif %}
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="container prose">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      {% include credits.html %}
+      <p class="site-footer__colofon text-small"><a href="/">Startpagina</a> · Gebouwd met het <a href="/design-system/">design system</a> van de {{ site.title }}.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

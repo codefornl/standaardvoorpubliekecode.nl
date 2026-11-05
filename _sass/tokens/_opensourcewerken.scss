@@ -1,0 +1,47 @@
+// Bronmerk 1: Opensourcewerken.nl — "open samenwerken"
+// De menselijke kant: samen organiseren, meetups, community of practice.
+// Bron: Pleio-thema van opensourcewerken.nl (site.style via GraphQL + Pleio --ref-* tokens).
+// Wordt niet direct in componenten gebruikt; alleen via de merktokens in _spc.scss.
+
+:root {
+  // Kleur (site.style)
+  --osw-color-primary: #42145f;
+  --osw-color-secondary: #42145f;
+  --osw-color-header: #f092cd;
+
+  // Typografie
+  // Het lettertype van opensourcewerken.nl (Rijksoverheid Sans) is alleen voor de Rijksoverheid.
+  // We zijn geen overheid, dus het wordt bewust NIET overgenomen. Alleen de schaal hieronder erven we.
+  --osw-font-size-tiny: .75rem;
+  --osw-font-size-small: .875rem;
+  --osw-font-size-normal: 1rem;
+  --osw-font-size-large: 1.125rem;
+  --osw-font-size-huge: 1.25rem;
+  --osw-line-height-small: 1.25rem;
+  --osw-line-height-normal: 1.5rem;
+  --osw-line-height-large: 1.625rem;
+  --osw-heading-size-small: 1.25rem;
+  --osw-heading-size-normal: 1.5rem;
+  --osw-heading-size-large: 1.875rem;
+  --osw-heading-size-huge: 2.625rem;
+  --osw-heading-size-enormous: 3.125rem;
+  --osw-heading-line-height-small: 1.75rem;
+  --osw-heading-line-height-normal: 1.875rem;
+  --osw-heading-line-height-large: 2.375rem;
+  --osw-heading-line-height-huge: 3.375rem;
+  --osw-heading-line-height-enormous: 3.875rem;
+
+  // Vorm
+  --osw-corner-xs: 3px;
+  --osw-corner-sm: 4px;
+  --osw-corner-md: 6px;
+  --osw-corner-lg: 8px;
+  --osw-corner-xl: 20px;
+
+  // Schaduw
+  --osw-shadow-hard-bottom: 0 1px 0 0 #00000036;
+  --osw-shadow-hard-top: 0 -1px 0 0 #00000036;
+  --osw-shadow-hard-outside: 0 0 0 1px #00000036;
+  --osw-shadow-soft-bottom: 0 1px 6px 0 #00000014, 0 20px 20px -15px #0000000d;
+  --osw-shadow-soft-center: 0 0 0 1px #0000000f, 0 0 8px #00000026;
+}

@@ -1,0 +1,32 @@
+// Organisme: community-blok — de twee manieren om mee te doen (meetup en nieuwsbrief),
+// als opvallend roze blok, onder elkaar. Staat op de homepage in de rechterkolom.
+.community {
+  --community-divider: color-mix(in srgb, var(--color-on-accent) 15%, transparent);
+  padding: var(--space-5);
+  border-radius: var(--corner-lg);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  box-shadow: var(--shadow-soft-bottom);
+}
+.community__title {
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-size-normal);
+  line-height: var(--heading-line-height-normal);
+  font-weight: bold;
+}
+.community__items { margin: var(--space-4) 0 0; padding: 0; list-style: none; }
+.community__item { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+.community__item + .community__item { margin-top: var(--space-5); padding-top: var(--space-5); border-top: 2px solid var(--community-divider); }
+.community__kicker {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: bold;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.community__text {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+  font-weight: bold;
+}

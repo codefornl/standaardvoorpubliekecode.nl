@@ -1,0 +1,24 @@
+// Bronmerk 2: Code for NL — de thuisbasis
+// Civic tech-community die samenwerkt aan een open, eerlijke en inclusieve digitale overheid.
+// De Nederlandse vertaling van de standaard staat op codefor.nl.
+// Bron: www.codefor.nl/css/style.css
+// Wordt niet direct in componenten gebruikt; alleen via de merktokens in _spc.scss.
+
+:root {
+  // Kleur
+  --cfnl-color-grey: #777876;     // tekst, menu, logo
+  --cfnl-color-orange: #eb8c3a;   // logo-vlak, call-to-action
+  --cfnl-color-red: #df5531;      // koppen, hover
+  --cfnl-color-green: #71bf9d;    // links, quote- en actieblokken
+
+  // Manieren van meedoen (kaartlabels op codefor.nl)
+  --cfnl-color-meedoen: #97bd2e;
+  --cfnl-color-meeleren: #348faa;
+  --cfnl-color-meekijken: #56165c;
+
+  // Vorm
+  --cfnl-corner: 5px;
+
+  // Typografie: Anton (koppen, hoofdletters) en Roboto worden bewust NIET overgenomen.
+  // Ze botsen met de leesbaarheidsregels van sfpc en komen van Google Fonts.
+}

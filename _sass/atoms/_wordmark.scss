@@ -1,0 +1,11 @@
+// Atoom: woordmerk — één kleur: paars op roze (osw)
+.wordmark {
+  display: inline-block;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1;
+  letter-spacing: -.01em;
+  color: var(--color-on-accent);
+  text-decoration: none;
+}

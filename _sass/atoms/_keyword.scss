@@ -1,0 +1,9 @@
+// Atoom: eis-woord (sfpc) — MOET / ZOU MOETEN / OPTIONEEL in eisen-lijsten
+.keyword {
+  font-weight: bold;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.keyword--must     { color: var(--color-text); }
+.keyword--should   { color: var(--color-text); font-style: italic; }
+.keyword--optional { color: var(--color-text-muted); }

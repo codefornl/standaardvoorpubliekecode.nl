@@ -1,0 +1,100 @@
+// Eigen merk: Standaard voor Publieke Code (NL)
+// Erft van drie bronmerken. Componenten gebruiken ALLEEN deze tokens.
+//   osw  = Opensourcewerken.nl      → open samenwerken (menselijk: kleur, warmte, meedoen)
+//   cfnl = Code for NL              → thuisbasis (community: meedoen, kerncijfers, afzender)
+//   sfpc = Standard for Public Code → opensource werken (beschrijvend: tekst, links, leesbaarheid)
+//   eigen = afgeleid, niet in een bronmerk aanwezig
+
+:root {
+  // Kleur
+  --color-primary: var(--osw-color-primary);                    // osw
+  --color-primary-hover: #2e0d43;                               // eigen: donkerder osw-paars
+  --color-primary-subtle: #f3edf7;                              // eigen: lichte osw-paars
+  --color-accent: var(--osw-color-header);                      // osw
+  --color-accent-hover: #ea7bbf;                                // eigen
+  --color-accent-subtle: #fce9f5;                               // eigen
+  --color-heading: var(--osw-color-primary);                    // osw (afwijking van sfpc: koppen in paars)
+  --color-text: var(--sfpc-color-text);                         // sfpc
+  --color-text-muted: #5c5c5c;                                  // eigen
+  --color-border: var(--sfpc-color-rule);                       // sfpc
+  --color-surface: var(--sfpc-color-page);                      // sfpc
+  --color-background: var(--sfpc-color-off-page);               // sfpc
+  --color-on-primary: #ffffff;                                  // eigen
+  --color-on-endorsement: #ffffff;                              // cfnl (wit op oranje logo-vlak)
+  --color-input-border: #8c8c8c;                                // eigen: 3:1 contrast op wit
+  --color-divider: #eeeeee;                                     // eigen: lijnen binnen een tabel
+  --color-on-accent: var(--osw-color-primary);                  // osw (paars op roze)
+  --color-focus: var(--osw-color-header);                       // osw
+
+  --color-link: var(--sfpc-color-text);                         // sfpc
+  --color-link-underline: var(--sfpc-color-link-underline);     // sfpc
+  --color-link-visited-underline: var(--osw-color-primary);     // osw-paars in de sfpc-rol "bezocht"
+  --color-link-internal-underline: var(--sfpc-color-link-internal-underline); // sfpc
+
+  // Manieren van meedoen (cfnl). Alleen als rand of stip, niet als tekstkleur:
+  // groen en blauw hebben te weinig contrast op wit.
+  --color-meedoen: var(--cfnl-color-meedoen);                   // cfnl
+  --color-meeleren: var(--cfnl-color-meeleren);                 // cfnl
+  --color-meekijken: var(--cfnl-color-meekijken);               // cfnl
+
+  // Afzender (cfnl)
+  --color-endorsement: var(--cfnl-color-grey);                  // cfnl
+  --color-endorsement-highlight: var(--cfnl-color-orange);      // cfnl
+
+  // Aftiteling (eigen): zoals aan het eind van een film
+  --color-credits-background: #000000;
+  --color-credits-text: #ffffff;
+  --color-credits-role: #a6a6a6;
+
+  // Typografie
+  // Lettertypen komen uit sfpc: Rijksoverheid Sans (osw) mogen we niet gebruiken, want we zijn geen overheid
+  --font-family-heading: var(--sfpc-font-heading), var(--sfpc-font-body); // sfpc
+  --font-family-body: var(--sfpc-font-body);                              // sfpc
+  --font-family-mono: var(--sfpc-font-mono);                              // sfpc
+
+  // Schaal (osw)
+  --font-size-tiny: var(--osw-font-size-tiny);
+  --font-size-small: var(--osw-font-size-small);
+  --font-size-normal: var(--osw-font-size-normal);
+  --font-size-large: var(--osw-font-size-large);
+  --font-size-huge: var(--osw-font-size-huge);
+  --line-height-small: var(--osw-line-height-small);
+  --line-height-normal: var(--osw-line-height-normal);
+  --line-height-large: var(--osw-line-height-large);
+  --heading-size-small: var(--osw-heading-size-small);
+  --heading-size-normal: var(--osw-heading-size-normal);
+  --heading-size-large: var(--osw-heading-size-large);
+  --heading-size-huge: var(--osw-heading-size-huge);
+  --heading-size-enormous: var(--osw-heading-size-enormous);
+  --heading-line-height-small: var(--osw-heading-line-height-small);
+  --heading-line-height-normal: var(--osw-heading-line-height-normal);
+  --heading-line-height-large: var(--osw-heading-line-height-large);
+  --heading-line-height-huge: var(--osw-heading-line-height-huge);
+  --heading-line-height-enormous: var(--osw-heading-line-height-enormous);
+  --measure: var(--sfpc-measure);                               // sfpc
+
+  // Ruimte (eigen, 4px-raster)
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  // Vorm en schaduw (osw)
+  --corner-xs: var(--osw-corner-xs);
+  --corner-sm: var(--osw-corner-sm);
+  --corner-md: var(--osw-corner-md);
+  --corner-lg: var(--osw-corner-lg);
+  --corner-xl: var(--osw-corner-xl);
+  --shadow-hard-bottom: var(--osw-shadow-hard-bottom);
+  --shadow-hard-top: var(--osw-shadow-hard-top);
+  --shadow-hard-outside: var(--osw-shadow-hard-outside);
+  --shadow-soft-bottom: var(--osw-shadow-soft-bottom);
+  --shadow-soft-center: var(--osw-shadow-soft-center);
+
+  // Layout (eigen)
+  --container-width: 1128px;
+}

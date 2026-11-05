@@ -1,0 +1,29 @@
+// Molecuul: afzender (cfnl) — "Een initiatief van" + Code for NL-woordmerk
+.endorsement {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  text-decoration: none;
+  color: inherit;
+}
+.endorsement__mark {
+  display: inline-flex;
+  align-items: center;
+  gap: .3em;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--corner-sm);
+  background: var(--color-surface);
+  color: var(--color-endorsement);
+  font-weight: bold;
+  font-size: var(--font-size-normal);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+.endorsement__highlight {
+  padding: 0 .25em;
+  background: var(--color-endorsement-highlight);
+  color: var(--color-on-endorsement);
+}
+a.endorsement:hover .endorsement__mark { box-shadow: 0 0 0 2px var(--color-accent); }

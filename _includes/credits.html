@@ -1,0 +1,18 @@
+<section class="credits" aria-labelledby="credits-title">
+  <h2 class="credits__title" id="credits-title">Met dank aan</h2>
+  {% for group in site.data.credits %}
+  <div class="credits__group">
+    <h3 class="credits__role">{{ group.role }}</h3>
+    <ul class="credits__names">
+      {% for credit in group.credits %}
+      <li>
+        {% if credit.url %}<a class="credit" href="{{ credit.url }}">{% else %}<span class="credit">{% endif %}
+          {% if credit.logo %}<img class="credit__logo{% if credit.logo_is_name %} credit__logo--wordmark{% endif %}" src="{{ credit.logo }}" alt="">{% endif %}
+          <span class="credit__name{% if credit.logo_is_name %} visually-hidden{% endif %}">{{ credit.name }}</span>
+        {% if credit.url %}</a>{% else %}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>

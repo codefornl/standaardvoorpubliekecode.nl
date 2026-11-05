@@ -1,0 +1,9 @@
+// Molecuul: melding
+.alert {
+  max-width: var(--measure);
+  padding: var(--space-4) var(--space-5);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--corner-sm);
+  background: var(--color-primary-subtle);
+}
+.alert--accent { border-left-color: var(--color-accent); background: var(--color-accent-subtle); }

@@ -1,0 +1,24 @@
+// Organisme: kerncijfers (cfnl) — "4000+ community leden"
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stats__item {
+  padding: var(--space-5);
+  border-radius: var(--corner-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft-bottom);
+}
+.stats__number {
+  display: block;
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  font-size: var(--heading-size-huge);
+  line-height: var(--heading-line-height-huge);
+  color: var(--color-heading);
+}
+.stats__label { display: block; color: var(--color-text-muted); }

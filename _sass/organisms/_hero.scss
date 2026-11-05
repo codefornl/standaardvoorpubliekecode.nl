@@ -1,0 +1,31 @@
+// Organisme: banner (osw)
+.hero { background: var(--color-primary); color: var(--color-on-primary); padding: var(--space-8) 0 var(--space-7); }
+.hero h1 {
+  max-width: 18ch;
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-size-huge);
+  line-height: var(--heading-line-height-huge);
+  font-weight: bold;
+}
+.hero p { margin-top: var(--space-4); max-width: var(--measure); font-size: var(--font-size-huge); line-height: var(--line-height-large); }
+.hero .button-row { margin-top: var(--space-6); }
+.hero a:not([class]) { color: var(--color-on-primary); text-decoration-color: var(--color-accent); }
+.hero a:not([class]):hover { background: none; }
+@media (max-width: $bp-small) {
+  .hero h1 { font-size: var(--heading-size-large); line-height: var(--heading-line-height-large); }
+}
+
+// Met foto: paarse overloop van links (tekst) naar rechts (foto zichtbaar)
+.hero--with-image {
+  background-color: var(--color-primary);
+  background-image:
+    linear-gradient(90deg, var(--color-primary) 30%, color-mix(in srgb, var(--color-primary) 80%, transparent) 55%, color-mix(in srgb, var(--color-primary) 20%, transparent)),
+    var(--hero-image);
+  background-size: cover;
+  background-position: center 35%;
+}
+@media (max-width: $bp-small) {
+  .hero--with-image {
+    background-image: linear-gradient(color-mix(in srgb, var(--color-primary) 90%, transparent) 0 0), var(--hero-image);
+  }
+}

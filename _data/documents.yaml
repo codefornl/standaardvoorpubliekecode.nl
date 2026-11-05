@@ -1,0 +1,16 @@
+# Documenten op de homepage, als lijst onder het kopje "Documenten".
+- title: Standaard voor Publieke Code (NL)
+  description: "Nederlandse vertaling van de Standaard voor Publieke Code: een set criteria die publieke organisaties ondersteunt bij het samen ontwikkelen en onderhouden van software en bijbehorend beleid."
+  url: https://codefor.nl/community-translations-standard/nl/
+  cta: Lees de NL vertaling online
+  language: NL
+- title: Standaard voor Publieke Code presentatie
+  description: Presentatie van de criteria van de Standaard voor Publieke Code.
+  url: https://codefor.nl/community-translations-standard/nl/presentation
+  cta: Bekijk de presentatie
+  language: NL
+- title: Standard for Public Code (upstream)
+  description: The Standard for Public Code is a set of criteria that supports public organizations in developing and maintaining software and policy together.
+  url: https://www.standardforpubliccode.org/
+  cta: Read the upstream version
+  language: EN

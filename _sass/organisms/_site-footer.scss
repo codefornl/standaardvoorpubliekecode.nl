@@ -1,0 +1,10 @@
+// Organisme: footer — de aftiteling op zwart
+.site-footer {
+  margin-top: var(--space-8);
+  background: var(--color-credits-background);
+  color: var(--color-credits-text);
+  padding: var(--space-8) 0 var(--space-6);
+}
+.site-footer a:not([class]) { color: var(--color-credits-text); text-decoration-color: var(--color-accent); }
+.site-footer a:not([class]):hover { background: none; }
+.site-footer__colofon { margin-top: var(--space-8); text-align: center; color: var(--color-credits-role); }

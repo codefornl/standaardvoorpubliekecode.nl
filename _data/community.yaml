@@ -1,0 +1,24 @@
+# Community-blok "Werken aan Publieke Code" in de rechterkolom van de homepage: de twee manieren om mee te doen.
+title: Werken aan Publieke Code
+items:
+  - label: Meetup
+    text: Kom naar de volgende meetup.
+    url: https://opensourcewerken.nl/events
+    cta: Bekijk op opensourcewerken.nl/events
+  - label: Blijf op de hoogte
+    text: Meld je aan voor de mailinglist.
+    url: https://everybit.email-provider.eu/memberforms/subscribe/standalone/form/?a=unjilv0jsj&l=hvgw7zvpf5
+    cta: Meld je aan
+
+# Tweede blok in de rechterkolom, onder het roze blok. "description" mag Markdown bevatten (bijvoorbeeld een link).
+more_title: Meer manieren om mee te doen
+more:
+  - title: Internationale community calls
+    description: Van de Standard for Public Code, meestal de laatste donderdag van de maand om 15:00. In het Engels.
+    url: https://www.standardforpubliccode.org/#community-calls
+  - title: "#StandardforPublicCode op Mastodon"
+    description: Volg de hashtag. Nieuw op Mastodon? Kijk op [mastodonstart.nl](https://mastodonstart.nl).
+    url: https://social.codefor.nl/tags/StandardforPublicCode
+  - title: "#standard-for-public-code op Slack"
+    description: Het kanaal in de Slack van Code for NL. Meld je aan via praatmee.codefor.nl.
+    url: https://praatmee.codefor.nl/

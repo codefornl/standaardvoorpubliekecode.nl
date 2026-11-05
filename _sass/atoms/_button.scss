@@ -1,0 +1,25 @@
+// Atoom: knop (osw) — de uitnodiging om mee te doen
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border: 2px solid transparent;
+  border-radius: var(--corner-md);
+  font-family: inherit;
+  font-size: var(--font-size-normal);
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+.button--primary   { background: var(--color-primary); color: var(--color-on-primary); }
+.button--primary:hover { background: var(--color-primary-hover); }
+.button--secondary { background: transparent; color: var(--color-primary); border-color: var(--color-primary); }
+.button--secondary:hover { background: var(--color-primary-subtle); }
+.button--accent    { background: var(--color-accent); color: var(--color-on-accent); }
+.button--accent:hover { background: var(--color-accent-hover); }
+.button--on-dark   { background: var(--color-surface); color: var(--color-primary); }
+.button--on-dark:hover { background: var(--color-accent-subtle); }

@@ -1,0 +1,33 @@
+// Basis: body, focus, print (print-regels geleend van sfpc: de standaard moet ook op papier werken)
+.ds {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+}
+.ds strong, .ds b { font-weight: bold; }
+.ds em, .ds i { font-style: italic; }
+.ds :focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--corner-xs);
+}
+
+// Alleen voor schermlezers
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media print {
+  @page { size: 21cm 29.7cm; margin: 2cm 1cm; }
+  .ds { background: none; }
+  .hero .button-row { display: none; }
+}

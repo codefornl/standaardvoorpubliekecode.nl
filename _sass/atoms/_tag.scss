@@ -1,0 +1,31 @@
+// Atoom: label
+.tag {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  border-radius: var(--corner-sm);
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: bold;
+}
+.tag--accent { background: var(--color-accent); color: var(--color-on-accent); }
+
+// Manieren van meedoen (cfnl): zwarte tekst, de kleur zit in de stip
+.tag--meedoen, .tag--meeleren, .tag--meekijken {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-hard-outside);
+}
+.tag--meedoen::before, .tag--meeleren::before, .tag--meekijken::before {
+  content: "";
+  display: inline-block;
+  width: .625em;
+  height: .625em;
+  margin-right: var(--space-1);
+  border-radius: 50%;
+  background: currentColor;
+}
+.tag--meedoen::before   { background: var(--color-meedoen); }
+.tag--meeleren::before  { background: var(--color-meeleren); }
+.tag--meekijken::before { background: var(--color-meekijken); }

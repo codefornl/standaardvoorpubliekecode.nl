@@ -1,0 +1,68 @@
+// Organisme: aftiteling (eigen) — credits zoals aan het eind van een film
+// Zwarte achtergrond, één gecentreerde kolom, per sectie een rol met de namen onder elkaar.
+// Logo's zijn wit en hebben geen blokje eromheen.
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-7);
+  text-align: center;
+  color: var(--color-credits-text);
+}
+.credits__title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  font-weight: bold;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+.credits__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+.credits__role {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  font-weight: normal;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--color-credits-role);
+}
+.credits__names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.credit {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: inherit;
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-size-small);
+  line-height: var(--heading-line-height-small);
+  font-weight: bold;
+  text-decoration: none;
+}
+.credit__logo {
+  width: auto;
+  height: 28px;
+  max-width: 40px;
+  flex: none;
+  object-fit: contain;
+}
+.credit__logo--wordmark { height: 24px; max-width: 120px; } // logo dat zelf de naam is, zoals ICATT
+a.credit:hover .credit__name,
+a.credit:focus-visible .credit__name {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}

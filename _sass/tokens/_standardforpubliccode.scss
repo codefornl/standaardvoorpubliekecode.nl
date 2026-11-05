@@ -1,0 +1,24 @@
+// Bronmerk 3: Standard for Public Code — "opensource werken"
+// De beschrijvende kant: hergebruik, leesbaarheid, kwaliteit.
+// Bron: brand.publiccode.net (kleuren, typografie) en standardforpubliccode.org/assets/style.css.
+// Wordt niet direct in componenten gebruikt; alleen via de merktokens in _spc.scss.
+
+:root {
+  // Kleur: zwarte tekst op wit, nooit gekleurde tekst
+  --sfpc-color-text: #000000;               // black
+  --sfpc-color-page: #ffffff;               // white
+  --sfpc-color-off-page: #f5f5f5;           // whitesmoke
+  --sfpc-color-rule: #d3d3d3;               // lightgrey
+  // Links: altijd onderstreept, de kleur van de streep geeft de status
+  --sfpc-color-link-underline: #0000ff;          // blue: nog niet bezocht
+  --sfpc-color-link-visited-underline: #800080;  // purple: bezocht
+  --sfpc-color-link-internal-underline: #a9a9a9; // darkgrey: binnen de pagina
+
+  // Typografie
+  --sfpc-font-heading: "Mulish", "Muli";
+  --sfpc-font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sfpc-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  // Leesbaarheid: maximale regellengte
+  --sfpc-measure: calc(30rem + 5em);
+}

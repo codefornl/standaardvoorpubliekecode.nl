@@ -1,0 +1,26 @@
+// Organisme: kaart (osw) — afbeelding + titel + tekst + actie
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border-radius: var(--corner-lg);
+  box-shadow: var(--shadow-soft-bottom);
+  overflow: hidden;
+  transition: box-shadow .15s;
+}
+.card:hover { box-shadow: var(--shadow-soft-center); }
+.card__image { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-accent-subtle); }
+.card__body { display: flex; flex-direction: column; gap: var(--space-3); flex: 1; padding: var(--space-5); }
+.card__title {
+  font-family: var(--font-family-heading);
+  font-size: var(--heading-size-small);
+  line-height: var(--heading-line-height-small);
+  font-weight: bold;
+  color: var(--color-heading);
+}
+.card__footer { margin-top: auto; padding-top: var(--space-2); }
+.card--featured { box-shadow: 0 0 0 3px var(--color-accent), var(--shadow-soft-bottom); }
+// Manieren van meedoen (cfnl): gekleurde bovenrand
+.card--meedoen   { border-top: 6px solid var(--color-meedoen); }
+.card--meeleren  { border-top: 6px solid var(--color-meeleren); }
+.card--meekijken { border-top: 6px solid var(--color-meekijken); }

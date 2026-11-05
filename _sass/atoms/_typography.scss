@@ -1,0 +1,33 @@
+// Atoom: koppen en tekst
+.heading-enormous, .heading-huge, .heading-large, .heading-normal, .heading-small {
+  font-family: var(--font-family-heading);
+  font-weight: bold;
+  color: var(--color-heading);
+}
+.heading-enormous { font-size: var(--heading-size-enormous); line-height: var(--heading-line-height-enormous); }
+.heading-huge     { font-size: var(--heading-size-huge);     line-height: var(--heading-line-height-huge); }
+.heading-large    { font-size: var(--heading-size-large);    line-height: var(--heading-line-height-large); }
+.heading-normal   { font-size: var(--heading-size-normal);   line-height: var(--heading-line-height-normal); }
+.heading-small    { font-size: var(--heading-size-small);    line-height: var(--heading-line-height-small); }
+.text-large { font-size: var(--font-size-large); line-height: var(--line-height-large); }
+.text-small { font-size: var(--font-size-small); line-height: var(--line-height-small); }
+.text-muted { color: var(--color-text-muted); }
+.ds code {
+  font-family: var(--font-family-mono);
+  font-size: .875em;
+  background: var(--color-primary-subtle);
+  padding: 1px 4px;
+  border-radius: var(--corner-xs);
+}
+.ds pre {
+  max-width: var(--measure);
+  padding: var(--space-4);
+  overflow-x: auto;
+  background: var(--color-surface);
+  border-radius: var(--corner-lg);
+  box-shadow: var(--shadow-hard-outside);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-normal);
+}
+.ds pre code { background: none; padding: 0; font-size: inherit; }

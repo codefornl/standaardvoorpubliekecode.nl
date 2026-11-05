@@ -1,0 +1,51 @@
+---
+---
+// Design system — Standaard voor Publieke Code
+// Merkenboom:  Opensourcewerken.nl (open samenwerken) + Code for NL (thuisbasis)
+//              + Standard for Public Code (opensource werken) → Standaard voor Publieke Code
+// Opbouw volgens atomic design: tokens → atomen → moleculen → organismen → templates → pagina's
+
+// 0. Sass-hulpmiddelen staan in base/breakpoints (geen CSS-uitvoer)
+// 1. Tokens: bronmerken, daarna het eigen merk
+@import "tokens/opensourcewerken";
+@import "tokens/codefornl";
+@import "tokens/standardforpubliccode";
+@import "tokens/spc";
+
+// 2. Basis
+@import "base/breakpoints";
+@import "base/reset";
+@import "base/base";
+
+// 3. Atomen
+@import "atoms/typography";
+@import "atoms/link";
+@import "atoms/button";
+@import "atoms/tag";
+@import "atoms/keyword";
+@import "atoms/form";
+@import "atoms/wordmark";
+
+// 4. Moleculen
+@import "molecules/field";
+@import "molecules/button-group";
+@import "molecules/alert";
+@import "molecules/link-list";
+@import "molecules/endorsement";
+
+// 5. Organismen
+@import "organisms/hero";
+@import "organisms/card";
+@import "organisms/community";
+@import "organisms/document-list";
+@import "organisms/widget";
+@import "organisms/requirements";
+@import "organisms/stats";
+@import "organisms/credits";
+@import "organisms/site-footer";
+
+// 6. Templates
+@import "templates/layout";
+
+// Documentatie
+@import "docs/docs";

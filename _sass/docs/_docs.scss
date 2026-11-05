@@ -1,0 +1,59 @@
+// Alleen voor de documentatie op /design-system/ — geen onderdeel van het merk
+
+// Merkenboom
+.brand-tree { display: grid; gap: var(--space-4); justify-items: center; }
+.brand-tree__parents { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); width: 100%; }
+.brand-node {
+  padding: var(--space-5);
+  border-radius: var(--corner-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft-bottom);
+}
+.brand-node__kicker { font-size: var(--font-size-small); line-height: var(--line-height-small); color: var(--color-text-muted); }
+.brand-node__title { margin-top: var(--space-1); font-family: var(--font-family-heading); font-weight: bold; font-size: var(--heading-size-small); line-height: var(--heading-line-height-small); color: var(--color-heading); }
+.brand-node__motto { margin-top: var(--space-1); font-weight: bold; }
+.brand-node ul { margin-top: var(--space-3); padding-left: var(--space-5); list-style: disc; }
+.brand-node li + li { margin-top: var(--space-1); }
+.brand-node--osw { border-top: 6px solid var(--osw-color-header); }
+.brand-node--sfpc { border-top: 6px solid var(--sfpc-color-text); }
+.brand-node--cfnl { border-top: 6px solid var(--cfnl-color-orange); }
+.brand-node--self { width: min(100%, 560px); text-align: center; border-top: 6px solid var(--color-primary); background: linear-gradient(90deg, var(--color-accent-subtle), var(--color-surface)); }
+.brand-tree__join {
+  position: relative;
+  width: calc(66.666% + var(--space-5) * 2 / 3);
+  height: 32px;
+  border: 2px solid var(--color-border);
+  border-top: 0;
+  border-radius: 0 0 var(--corner-lg) var(--corner-lg);
+}
+.brand-tree__join::after { content: ""; position: absolute; left: calc(50% - 1px); top: 0; width: 2px; height: 100%; background: var(--color-border); }
+.brand-tree__stem { width: 2px; height: 24px; background: var(--color-border); }
+.atomic-chain { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); align-items: center; }
+.atomic-chain a { padding: var(--space-2) var(--space-4); border-radius: 999px; background: var(--color-primary); color: var(--color-on-primary); font-weight: bold; text-decoration: none; }
+.atomic-chain a:hover { background: var(--color-primary-hover); }
+.atomic-chain span { color: var(--color-text-muted); }
+@media (max-width: $bp-medium) {
+  .brand-tree__parents { grid-template-columns: 1fr; }
+  .brand-tree__join { display: none; }
+}
+
+// Herkomst-labels
+.origin { display: inline-block; padding: 0 var(--space-2); border-radius: var(--corner-sm); font-size: var(--font-size-tiny); font-weight: bold; line-height: 1.25rem; white-space: nowrap; }
+.origin--osw { background: var(--osw-color-header); color: var(--osw-color-primary); }
+.origin--sfpc { background: var(--sfpc-color-text); color: var(--sfpc-color-page); }
+.origin--cfnl { background: var(--cfnl-color-orange); color: #000000; }
+.origin--self { background: var(--color-primary-subtle); color: var(--color-primary); }
+
+// Kleurstalen en demo's
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-4); }
+.swatch { background: var(--color-surface); border-radius: var(--corner-lg); box-shadow: var(--shadow-soft-bottom); overflow: hidden; }
+.swatch__chip { height: 88px; box-shadow: inset 0 -1px 0 #0000001a; }
+.swatch__meta { padding: var(--space-3) var(--space-4); font-size: var(--font-size-small); line-height: var(--line-height-small); }
+.swatch__meta code { display: block; background: none !important; padding: 0 !important; color: var(--color-text-muted); }
+.swatch__meta .origin { margin-top: var(--space-2); }
+.demo-row { display: flex; flex-wrap: wrap; gap: var(--space-5); align-items: center; }
+.demo-row figure { text-align: center; font-size: var(--font-size-small); }
+.demo-row figcaption { margin-top: var(--space-2); }
+.demo-box { width: 96px; height: 64px; background: var(--color-surface); border-radius: var(--corner-lg); }
+.demo-bar { display: block; height: 12px; background: var(--color-accent); }
+.demo-dark { padding: var(--space-5); background: var(--color-primary); border-radius: var(--corner-lg); }

@@ -1,42 +1,24 @@
 ---
-layout: none
+layout: default
+hero_title: Standaard voor Publieke Code
+hero_text: "Startpagina voor de Nederlandse community rond de Standaard voor Publieke Code: criteria voor publieke organisaties die samen software en beleid ontwikkelen en onderhouden."
 ---
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standaard voor Publieke Code</title>
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/165153351?s=200&v=4">
-  <link rel="stylesheet" href="/reset.css">
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <header>
-    <!-- <img src="https://raw.githubusercontent.com/Algoritmeregister/algoritmeregister.github.io/redesign/img/algoritmeregister-logo.svg"><br> -->
-    <h1 style="font-size: 2.4em">Startpagina Standaard voor Publieke Code</h1>
-  </header>
-  <main class="cards">
-    {% for link in site.data.links %}
-    <div class="card">
-        <img src="{{ link.image }}">
-        <div class="card__content">
-            <h2>{{ link.title }}</h2>
-            <p>{{ link.description }}</p>
-            <p><a target="_blank" href="{{ link.url }}">{{ link.cta }}</a></p>
-        </div>
-    </div>
-    {% endfor %}
-  </main>
-  <footer>
-    <div style="max-width: 768px; margin: auto; display: flex; padding: 20px">
-        <div style="width: 100px">
-            <img style="width: 100px; height: 100px; border-radius: 100px; border: 4px solid white;" src="https://img.apitecture.nl/?url=https://www.jgroenen.nl/img/johan-groenen-linkedin-image-bw.jpeg">
-        </div>
-        <div style="flex: 1; text-align: left; padding-left: 40px; line-height: 1.4em">
-            <p>Johan Groenen is (mede-)initiatiefnemer, organisator en strateeg bij publieke open source initiatieven zoals Datalab Amsterdam, Code for NL, NL Design System, Algoritmeregister, Sensorregister en Gegevensboekhouding JenV. Johans motto is <i style="font-style: italic;">"Technology is best when it brings people together"</i>. Je kunt hem bereiken via <a style="color: white" href="https://www.jgroenen.nl">zijn persoonlijke website</a>.</p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>
+<div class="sidebar-layout">
+  <aside class="sidebar-layout__aside">
+    {% include community.html %}
+  </aside>
+  <div class="sidebar-layout__main">
+    <h2 class="heading-large">Documenten</h2>
+    <ul class="document-list">
+      {% for document in site.data.documents %}
+      <li>
+        <a class="document" href="{{ document.url }}"{% if document.language == "EN" %} hreflang="en"{% endif %}>
+          <span class="document__title">{{ document.title }}{% if document.language %} <span class="tag">{{ document.language }}</span>{% endif %}</span>
+          <span class="document__description"{% if document.language == "EN" %} lang="en"{% endif %}>{{ document.description }}</span>
+          <span class="document__cta"{% if document.language == "EN" %} lang="en"{% endif %}>{{ document.cta }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+// Atoom: link (sfpc) — zwarte tekst, altijd onderstreept, de kleur van de streep geeft de status
+// In :where() zodat de specificiteit laag blijft en componenten (linklijst, documentenlijst) het kunnen overschrijven.
+:where(.ds) :where(a:not([class]), .link) {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-color: var(--color-link-underline);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+:where(.ds) :where(a:not([class]), .link):visited { text-decoration-color: var(--color-link-visited-underline); }
+:where(.ds) :where(a:not([class])[href^="#"], .link[href^="#"]) { text-decoration-color: var(--color-link-internal-underline); }
+:where(.ds) :where(a:not([class]), .link):hover { background: var(--color-background); }

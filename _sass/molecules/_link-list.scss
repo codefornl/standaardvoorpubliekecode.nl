@@ -1,0 +1,26 @@
+// Molecuul: lijst met directe links (osw "Direct naar")
+.link-list { list-style: none; margin: 0; padding: 0; }
+.link-list > li + li { box-shadow: var(--shadow-hard-top); }
+.link-list > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+.link-list > li > a::after { content: "→"; flex: none; transition: transform .15s; }
+.link-list > li > a:hover { background: var(--color-primary-subtle); }
+.link-list > li > a:hover::after { transform: translateX(4px); }
+
+// Variant met een korte uitleg onder elke link (de uitleg mag zelf een link bevatten)
+.link-list--described > li { padding-bottom: var(--space-3); }
+.link-list--described > li > a { padding-bottom: var(--space-1); }
+.link-list__description {
+  padding: 0 var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}

@@ -1,0 +1,27 @@
+{% assign community = site.data.community %}
+<section class="community" aria-labelledby="community-title">
+  <h2 class="community__title" id="community-title">{{ community.title }}</h2>
+  <ul class="community__items">
+    {% for item in community.items %}
+    <li class="community__item">
+      <span class="community__kicker">{{ item.label }}</span>
+      <span class="community__text">{{ item.text }}</span>
+      <a class="button button--primary" href="{{ item.url }}">{{ item.cta }} <span aria-hidden="true">→</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% if community.more %}
+<section class="widget" aria-labelledby="community-more-title">
+  <h2 class="widget__title" id="community-more-title">{{ community.more_title }}</h2>
+  <ul class="link-list link-list--described">
+    {% for item in community.more %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {% if item.description %}<div class="link-list__description">{{ item.description | markdownify }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
