@@ -1,8 +1,8 @@
-// Organisme: community-blok — de twee manieren om mee te doen (meetup en nieuwsbrief),
+// Organisme: community-blok — de manieren om mee te doen (meetup, nieuwsbrief, Signalgroep),
 // als opvallend roze blok, onder elkaar. Staat op de homepage in de rechterkolom.
 .community {
   --community-divider: color-mix(in srgb, var(--color-on-accent) 15%, transparent);
-  padding: var(--space-5);
+  padding: var(--space-4) var(--space-5);
   border-radius: var(--corner-lg);
   background: var(--color-accent);
   color: var(--color-on-accent);
@@ -14,9 +14,9 @@
   line-height: var(--heading-line-height-normal);
   font-weight: bold;
 }
-.community__items { margin: var(--space-4) 0 0; padding: 0; list-style: none; }
-.community__item { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-3); }
-.community__item + .community__item { margin-top: var(--space-5); padding-top: var(--space-5); border-top: 2px solid var(--community-divider); }
+.community__items { margin: var(--space-3) 0 0; padding: 0; list-style: none; }
+.community__item { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); }
+.community__item + .community__item { margin-top: var(--space-4); padding-top: var(--space-4); border-top: 2px solid var(--community-divider); }
 .community__kicker {
   font-size: var(--font-size-small);
   line-height: var(--line-height-small);
@@ -29,4 +29,10 @@
   font-size: var(--font-size-large);
   line-height: var(--line-height-large);
   font-weight: bold;
+}
+// Link op roze: streep in de tekstkleur, want de gewone (roze) linkstreep valt weg tegen de achtergrond.
+.community__link {
+  color: inherit;
+  font-weight: bold;
+  text-decoration-color: currentColor;
 }

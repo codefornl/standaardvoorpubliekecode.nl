@@ -6,7 +6,11 @@
     <li class="community__item">
       <span class="community__kicker">{{ item.label }}</span>
       <span class="community__text">{{ item.text }}</span>
+      {% if item.as_link %}
+      <a class="link community__link" href="{{ item.url }}">{{ item.cta }}</a>
+      {% else %}
       <a class="button button--primary" href="{{ item.url }}">{{ item.cta }} <span aria-hidden="true">→</span></a>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>

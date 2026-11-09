@@ -1,14 +1,20 @@
-# Community-blok "Werken aan Publieke Code" in de rechterkolom van de homepage: de twee manieren om mee te doen.
+# Community-blok "Werken aan Publieke Code" in de rechterkolom van de homepage: de drie manieren om mee te doen.
+# Elk item toont een knop, tenzij "as_link: true": dan een gewone link.
 title: Werken aan Publieke Code
 items:
   - label: Meetup
     text: Kom naar de volgende meetup.
     url: https://opensourcewerken.nl/events
     cta: Bekijk op opensourcewerken.nl/events
+    as_link: true   # gewone link in plaats van knop
   - label: Blijf op de hoogte
     text: Meld je aan voor de mailinglist.
     url: https://everybit.email-provider.eu/memberforms/subscribe/standalone/form/?a=unjilv0jsj&l=hvgw7zvpf5
     cta: Meld je aan
+  - label: Signalgroep
+    text: Voor vragen, updates en reminders van de meetups.
+    url: https://signal.group/#CjQKIGB2VqmxPJt_BmytCosdcJtntbb-V5np1-GlLGvC0aq3EhAZ_DP4MRb8IIgf3PPXbO_p
+    cta: Word lid
 
 # Tweede blok in de rechterkolom, onder het roze blok. "description" mag Markdown bevatten (bijvoorbeeld een link).
 more_title: Meer manieren om mee te doen
